@@ -1,0 +1,349 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 20px 20px 200px 20px;
+}
+
+.login-container form {
+    width: 400px;
+    padding: 60px;
+    border-radius: 10px;
+    background-color: #55679C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+}
+
+.login-container form h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, #374586, #253159);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    transition: background-color 0.3s ease;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login-container form button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #302559;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container form button:hover {
+    background-color: #251d50;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.login-container form .error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 450px) {
+    .login-container {
+        margin: 45px 45px 300px 45px;
+        /* padding: 20px; */
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .login-container {
+        margin: 45px 45px 400px 45px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .login-container {
+        margin: 45px 45px 700px 45px;
+    }
+
+}
+
+.profile-container {
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.profile-left {
+    background: linear-gradient(135deg, #83cfc5e3, #be84c4c9);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: rgb(4, 27, 236);
+    font-size: 24px;
+    margin: 10px 0 5px;
+}
+
+p {
+    color: rgb(20, 20, 20);
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.edit-icon {
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.profile-right {
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #000;
+}
+
+.profile-info,
+.profile-projects {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-info h3,
+.profile-projects h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.projects-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-row div {
+    width: 45%;
+}
+
+.projects-row div p {
+    margin: 5px 0;
+    color: #555;
+}
+
+
+
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+    }
+
+    .projects-row {
+        flex-direction: column;
+    }
+
+    .projects-row div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-card {
+        max-width: 100%;
+    }
+
+    .profile-left,
+    .profile-right {
+        padding: 10px;
+    }
+
+    .profile-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .projects-row {
+        flex-direction: column;
+    }
+
+    .projects-row div {
+        width: 100%;
+    }
+
+    .edit-icon {
+        font-size: 14px;
+    }
+
+    .profile-info,
+    .profile-projects {
+        margin-bottom: 10px;
+    }
+
+    .profile-info h3,
+    .profile-projects h3 {
+        margin-bottom: 5px;
+    }
+
+    .projects-row div p {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+}
+
+.posts-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.posts-container h2 {
+    font-size: 24px;
+    color: rgb(2, 2, 2);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 20px 50px 20px 50px;
+    background-color: #bb7a7a7c;
+    border-radius: 20px;
+
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #624E88;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.post h3 {
+    font-size: 20px;
+    color: #e7e7e7;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+
+.posts-container p {
+    font-size: 16px;
+    color: #e7e7e7;
+    text-align: center;
+}
+
+.nopost {
+    font-size: 20px;
+    color: #e7e7e7;
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #bb7a7a7c;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+
+}
+
+@media screen and (max-width: 768px) {
+    .posts-container {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding: 10px;
+    }
+
+    .post {
+        margin-bottom: 10px;
+    }
+
+    .post h3 {
+        font-size: 18px;
+    }
+
+    .post p {
+        font-size: 14px;
+    }
+}
