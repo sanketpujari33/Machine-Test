@@ -2,6 +2,10 @@
 
 # Intern Task: Three-Page Website with Authentication, Data Filtering, and Display
 
+## Deploy Link
+
+For detailed Deploy Link, please refer to [Deploy Link](https://machine-test-jyxq.onrender.com/).
+
 ## Project Overview
 
 This project is a simple three-page website built as part of the VSI intern task. The website interacts with the following API: [JSONPlaceholder](https://jsonplaceholder.typicode.com/) to perform the following key functionalities:
