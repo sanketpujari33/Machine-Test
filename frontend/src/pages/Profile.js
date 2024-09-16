@@ -23,7 +23,6 @@ const Profile = ({ user }) => {
 
                     <div className="profile-projects">
                         <h3>Projects</h3>
-                        {console.log(user)}
                         <div className="projects-row">
                             <div>
                                 <p><strong>Website</strong></p>
